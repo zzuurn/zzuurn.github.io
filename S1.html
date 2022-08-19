@@ -137,7 +137,9 @@ document.addEventListener("copy", (evt) => {
 // (B2) PREVENT THE DEFAULT COPY ACTION
   evt.preventDefault();
 }, false);
-</script><tw-passagedata pid="1" name="Train station" tags="backgroundImg" position="150,75" size="100,100">&lt;&lt;audio mainsong fadein loop volume 0.5&gt;&gt;
+</script><tw-passagedata pid="1" name="Train station" tags="backgroundImg" position="150,75" size="100,100">&lt;&lt;audio mainsong play&gt;&gt;
+&lt;&lt;audio mainsong loop&gt;&gt;
+&lt;&lt;audio mainsong volume 0.4&gt;&gt;
 
 
 &lt;&lt;set $m to &quot;Mike-03-00-25&quot;&gt;&gt;
@@ -161,7 +163,8 @@ You are standing in a crowded train station.
 马车后面的天空，给火光映照得通红。失火的，是江湖上赫赫有名的唐家堡。就在三刻钟以前，一群武功极高的蒙面人，杀进唐家堡四处放火，与堡内高手发生激战。你丈夫，当代堡主为了给你们创造逃跑的机会，向蒙面头目使出了以命搏命的同归剑决。在气劲相撞的瞬间，头目面巾吹起，你看清楚了那个人的脸，竟然是丈夫的二弟唐慰亭！
 
 
-    It&#39;s time to [[buy a ticket|gg]].</tw-passagedata><tw-passagedata pid="2" name="gg" tags="" position="350,75" size="100,100">       
+    It&#39;s time to [[buy a ticket|gg]].</tw-passagedata><tw-passagedata pid="2" name="gg" tags="" position="350,75" size="100,100">    &lt;&lt;audio TS play&gt;&gt;
+        
     Hello, $player_name! Ghost Lake is pleasant this time of year. They say the
     howling noise is just an effect of the wind moving across
     the surface of the water, but you&#39;re not so sure. THE END
@@ -169,6 +172,10 @@ You are standing in a crowded train station.
     &lt;img src=&quot;https://zmqio.github.io/m/a.jpg&quot;&gt;
     
     &lt;audio scr=&quot;https://zmqio.github.io/m/a.wav&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="25,75" size="100,100">		&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.mp3&quot;&gt;&gt;
+        
+&lt;&lt;cacheaudio &quot;TS&quot; &quot;https://zmqio.github.io/m/a.wav&quot;&gt;&gt;
+                
+                
 
 
 </tw-passagedata></tw-storydata>
