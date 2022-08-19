@@ -115,15 +115,28 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 }
 
 body {
- -webkit-user-select: none;
--webkit-touch-callout: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 125%;
  }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// (A) PREVENT CONTEXT MENU FROM OPENING
+document.addEventListener("contextmenu", (evt) => {
+  evt.preventDefault();
+}, false);
+
+// (B) PREVENT CLIPBOARD COPYING
+document.addEventListener("copy", (evt) => {
+// (B1) CHANGE THE COPIED TEXT IF YOU WANT
+  evt.clipboardData.setData("text/plain", "Copying is not allowed on this webpage");
+ 
+// (B2) PREVENT THE DEFAULT COPY ACTION
+  evt.preventDefault();
+}, false);
 </script><tw-passagedata pid="1" name="Train station" tags="backgroundImg" position="150,75" size="100,100">&lt;&lt;audio mainsong play&gt;&gt;
 
 
