@@ -113,7 +113,28 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 #story {
   margin-left: 3.5em;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Train station" tags="backgroundImg" position="150,75" size="100,100">&lt;&lt;audio mainsong play&gt;&gt;
+
+body {
+ -webkit-user-select: none;
+-webkit-touch-callout: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ }
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</script><tw-passagedata pid="1" name="Train station" tags="backgroundImg" position="150,75" size="100,100">&lt;&lt;audio mainsong play&gt;&gt;
+
+
+&lt;&lt;set $m to &quot;Mike-03-00-25&quot;&gt;&gt;
+&lt;&lt;set _elements to $m.split(&#39;-&#39;)&gt;&gt;
+&lt;&lt;set $m0 to _elements[0]&gt;&gt;
+&lt;&lt;set $m1 to Number(_elements[1])&gt;&gt;
+&lt;&lt;set $m2 to Number(_elements[2])&gt;&gt;
+&lt;&lt;set $m3 to Number(_elements[3])&gt;&gt;
+$m0 $m1 $m2 $m3
+
 
 
 You are standing in a crowded train station.
