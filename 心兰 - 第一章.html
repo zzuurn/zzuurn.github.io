@@ -98,35 +98,53 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="X1" startnode="1" creator="Twine" creator-version="2.4.1" format="SugarCube" format-version="2.36.1" ifid="CB3B4B3B-8655-4705-9B23-F04BB64C8936" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body[data-tags~="NoBGImg"]{
-  background-image: none;
-}
-
-
-#ui-bar {
-  display: none;
-}
-
-body {
+	<tw-storydata name="X1" startnode="1" creator="Twine" creator-version="2.4.1" format="SugarCube" format-version="2.36.1" ifid="CB3B4B3B-8655-4705-9B23-F04BB64C8936" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
   background-image: url("https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
   	background-position: center top;
-}
-
-#story {
-  margin-left: 3.5em;
-}
-
-body {
+    
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   font-size: 125%;
- }
+}
+
+body[data-tags~="NoBGImg"]{
+  background-image: none;  
+  
+   -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 125%;
+}
+
+a {
+		color: #82CAFF;
+  		font-weight: bold;
+}
+
+a[data-tags~="LightGoldLink"] {
+		color: #F1E5AC;
+  		font-weight: bold;
+}
+
+
+/*
+#ui-bar {
+  display: none;
+}
+
+#story {
+  margin-left: 3.5em;
+}
+*/
+
 
 
 .blueText {
@@ -138,7 +156,7 @@ body {
 }
 
 .goldText {
-  color: #F1E5AC;
+  color: #FFD700;
 }
 
 .pinkText {
@@ -153,9 +171,20 @@ body {
   color: #8467D7;
 }
 
+.grayText {
+  color: #808080;
+}
+
 .s150Text {
   font-size: 150%;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// (A) PREVENT CONTEXT MENU FROM OPENING
+}
+
+.s50Text {
+  font-size: 50%;  
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// (A) PREVENT CONTEXT MENU FROM OPENING
 document.addEventListener("contextmenu", (evt) => {
   evt.preventDefault();
 }, false);
@@ -177,14 +206,16 @@ document.addEventListener("copy", (evt) => {
 密码
 &lt;&lt;textbox &quot;$pw&quot; &quot;&quot;&gt;&gt;
 
-&lt;&lt;button [[确认|TS]]&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;button [[我同意以下条款，进入|TS]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 
-
+&lt;span class=&quot;grayText&quot;&gt;&lt;span class=&quot;s50Text&quot;&gt;条款: 你同意你已满十八岁，并且使用这个软件和网站是你的自愿行为。此软件为娱乐和教育为目的，其中的指令，任务，要求，和信息皆非对用户的强迫或约束。你可以自由选择是否执行其中的任何指令，动作，拍摄，或传播要求。你同意此软件和网站的制作者不需负责由此软件或网站造成的对身体，精神，或金钱上的伤害或损失。一切的伤害，损失，和责任由你自己承担。&lt;/span&gt;&lt;/span&gt;
+\
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio mainsong play&gt;&gt;
 &lt;&lt;audio mainsong loop&gt;&gt;
-&lt;&lt;audio mainsong volume 0.4&gt;&gt;
-&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="gg" tags="" position="350,75" size="100,100">  &lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;Hello, $player_name!&lt;/div&gt;
+&lt;&lt;audio mainsong volume 0.3&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="gg" tags="" position="400,350" size="100,100">  &lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;Hello, $player_name!&lt;/div&gt;
     
     Ghost Lake is pleasant this time of year. They say the
     howling noise is just an effect of the wind moving across
@@ -195,11 +226,11 @@ document.addEventListener("copy", (evt) => {
     &lt;&lt;audio TS play&gt;&gt;    </tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="25,75" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.mp3&quot;&gt;&gt;
         
 &lt;&lt;cacheaudio &quot;TS&quot; &quot;https://zmqio.github.io/m/a.wav&quot;&gt;&gt;
-</tw-passagedata><tw-passagedata pid="4" name="TS" tags="" position="275,200" size="100,100">&lt;&lt;if $pw neq &quot;&quot;&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="4" name="TS" tags="" position="300,75" size="100,100">&lt;&lt;if $pw neq &quot;&quot;&gt;&gt;\
 		密码错误，[[重新输入|Start]].
 	&lt;&lt;else&gt;&gt;\
 		&lt;&lt;if not $chain.contains(&quot;-&quot;)&gt;&gt;\
-				&lt;&lt;set $name to &quot;SDFF&quot;&gt;&gt;$chain.trim()\
+				&lt;&lt;set $name to &quot;SDFF&quot;/*$chain.trim()*/&gt;&gt;\
 				&lt;&lt;set $chain to $name+&quot;-000-000-000-000-000-000-000&quot;&gt;&gt;\
         &lt;&lt;endif&gt;&gt;\
                 &lt;&lt;set _elements to $chain.split(&#39;-&#39;)&gt;&gt;\
@@ -211,24 +242,218 @@ document.addEventListener("copy", (evt) => {
 				&lt;&lt;set $s2y to Number(_elements[6].trim())&gt;&gt;\
                 &lt;&lt;set $s2g to Number(_elements[7].trim())&gt;&gt;\
 &lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;&lt;span class=&quot;s150Text&quot;&gt;$name&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span class=&quot;purpleText&quot;&gt;淫欲 $s1y&amp;nbsp;&amp;nbsp;羞耻 $s1x&amp;nbsp;&amp;nbsp;露出 $s1l&amp;nbsp;&amp;nbsp;痛责 $s1t&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span class=&quot;redText&quot;&gt;乳房 $s2r&amp;nbsp;&amp;nbsp;阴部 $s2y&amp;nbsp;&amp;nbsp;肛门 $s2g&lt;/span&gt;&lt;/div&gt;
-&lt;span class=&quot;goldText&quot;&gt;&lt;b&gt;剧情开始前准备任务&lt;/b&gt;
+&lt;span class=&quot;goldText&quot;&gt;
+&lt;b&gt;剧情开始前准备任务&lt;/b&gt;
 
 1.把上衣和裤子脱掉，只穿胸罩和内裤。
 2.穿上丝袜。
-3.准备一大杯水。
+3.道具：准备一大杯水。
 
 注意，除非本主任务指令，剧情进行中不得自行自慰或高潮。
 &lt;/span&gt;
-
-
-debug: $s1y $s1x $m2 $m3
-
+[[我准备好了，开始剧情|1]]
 
 	&lt;&lt;endif&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="5" name="1" tags="" position="425,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;set $pres1x to $s1x&gt;&gt;\
+&lt;&lt;set $pres1l to $s1l&gt;&gt;\
+&lt;&lt;set $pres1t to $s1t&gt;&gt;\
+&lt;&lt;set $pres2r to $s2r&gt;&gt;\
+&lt;&lt;set $pres2y to $s2y&gt;&gt;\
+&lt;&lt;set $pres2g to $s2g&gt;&gt;\
+\
+&lt;&lt;set $s1y to $s1y&gt;&gt;\
+&lt;&lt;set $s1x to $s1x&gt;&gt;\
+&lt;&lt;set $s1l to $s1l&gt;&gt;\
+&lt;&lt;set $s1t to $s1t&gt;&gt;\
+&lt;&lt;set $s2r to $s2r&gt;&gt;\
+&lt;&lt;set $s2y to $s2y&gt;&gt;\
+&lt;&lt;set $s2g to $s2g&gt;&gt;\
+\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1y&quot;&gt;&gt;$s1y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1x&quot;&gt;&gt;$s1x&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1l&quot;&gt;&gt;$s1l&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1t&quot;&gt;&gt;$s1t&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2r&quot;&gt;&gt;$s2r&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2y&quot;&gt;&gt;$s2y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2g&quot;&gt;&gt;$s2g&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+\
+&lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;
+&lt;span class=&quot;s150Text&quot;&gt;$name&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\
+&lt;span class=&quot;purpleText&quot;&gt;\
+淫欲 &lt;span id=&quot;s1y&quot;&gt;$pres1y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+羞耻 &lt;span id=&quot;s1x&quot;&gt;$pres1x&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+露出 &lt;span id=&quot;s1l&quot;&gt;$pres1l&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+痛责 &lt;span id=&quot;s1t&quot;&gt;$pres1t&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+&amp;nbsp;&lt;/span&gt;\
+&lt;span class=&quot;redText&quot;&gt;\
+乳房 &lt;span id=&quot;s2r&quot;&gt;$pres2r&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+阴部 &lt;span id=&quot;s2y&quot;&gt;$pres2y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+肛门 &lt;span id=&quot;s2g&quot;&gt;$pres2g&lt;/span&gt;\
+&lt;/span&gt;\
+&lt;/div&gt;\
 
+事态因何会发展到这种地步，你已经想不起也不愿回想。
 
+马车后面的天空，给火光映照得通红。失火的，是江湖上赫赫有名的唐家堡。就在三刻钟以前，一群武功极高的蒙面人，杀进唐家堡四处放火，与堡内高手发生激战。你丈夫，当代堡主为了给你们创造逃跑的机会，向蒙面头目使出了以命搏命的同归剑决。在气劲相撞的瞬间，头目面巾吹起，你看清楚了那个人的脸，竟然是丈夫的二弟唐慰亭！
 
+丈夫的性命换回了短暂的逃跑机会。你们夺得马车杀出重围，在林中小道上奔逃。马车颠簸着，执鞭的是一名十八岁的男孩，面目清秀，肌肤白皙似云。他叫唐竹，是丈夫第一任妻子的儿子。在唐竹六岁时，母亲便过世了，唐堡主又娶了当时只有十六岁的师妹，也就是人称白兰仙子的你。唐竹聪明孝顺，由于自小由你带大，父亲便让其叫你母亲。你也把他视为己出，感情深厚。
 
+「娘，你好点了没有，娘……」男孩频频向车厢探问。隐隐间，你感觉腰间有鲜血渗出。在刚才的厮杀中，给敌人剑气击中，伤得不轻。你恍惚了好半晌，才回答：
+
+[[●「竹儿，娘没事，你……不用担心了，我们不可以耽搁，敌人要追上来了。」|2.1]]
+[[●「竹儿，娘受伤了，我们要停下来疗伤。」|2.2]]</tw-passagedata><tw-passagedata pid="6" name="2.1" tags="" position="550,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;set $pres1x to $s1x&gt;&gt;\
+&lt;&lt;set $pres1l to $s1l&gt;&gt;\
+&lt;&lt;set $pres1t to $s1t&gt;&gt;\
+&lt;&lt;set $pres2r to $s2r&gt;&gt;\
+&lt;&lt;set $pres2y to $s2y&gt;&gt;\
+&lt;&lt;set $pres2g to $s2g&gt;&gt;\
+\
+&lt;&lt;set $s1y to $s1y&gt;&gt;\
+&lt;&lt;set $s1x to $s1x&gt;&gt;\
+&lt;&lt;set $s1l to $s1l&gt;&gt;\
+&lt;&lt;set $s1t to $s1t&gt;&gt;\
+&lt;&lt;set $s2r to $s2r&gt;&gt;\
+&lt;&lt;set $s2y to $s2y&gt;&gt;\
+&lt;&lt;set $s2g to $s2g&gt;&gt;\
+\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1y&quot;&gt;&gt;$s1y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1x&quot;&gt;&gt;$s1x&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1l&quot;&gt;&gt;$s1l&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1t&quot;&gt;&gt;$s1t&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2r&quot;&gt;&gt;$s2r&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2y&quot;&gt;&gt;$s2y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2g&quot;&gt;&gt;$s2g&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+\
+&lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;
+&lt;span class=&quot;s150Text&quot;&gt;$name&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\
+&lt;span class=&quot;purpleText&quot;&gt;\
+淫欲 &lt;span id=&quot;s1y&quot;&gt;$pres1y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+羞耻 &lt;span id=&quot;s1x&quot;&gt;$pres1x&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+露出 &lt;span id=&quot;s1l&quot;&gt;$pres1l&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+痛责 &lt;span id=&quot;s1t&quot;&gt;$pres1t&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+&amp;nbsp;&lt;/span&gt;\
+&lt;span class=&quot;redText&quot;&gt;\
+乳房 &lt;span id=&quot;s2r&quot;&gt;$pres2r&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+阴部 &lt;span id=&quot;s2y&quot;&gt;$pres2y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+肛门 &lt;span id=&quot;s2g&quot;&gt;$pres2g&lt;/span&gt;\
+&lt;/span&gt;\
+&lt;/div&gt;\
+
+男孩一咬牙，继续鞭马飞奔。马车在山林里飞驰，不断拐弯摆脱追兵。直到天要亮了，背后追兵的火把已经不见，男孩才将马车驶至路边。一跃入车厢内，男孩就看见你云鬓散乱，面色苍白，嘴角已泛有血丝。时间拖得太长了，你的伤势已经开始蔓延。
+
+见到你神情惨淡，男孩心痛不已。「娘，对不起，都是孩儿没用，累您……」赶紧拿出药丹让你服下。「娘没事，吃了秘药再调息一下就没事了，你不必太过担心。」你安慰着儿子，忽然声音哽咽，「只是……你父亲，还有你的姐妹们……我……真是……」
+
+说到适才阵亡的父亲，男孩唐竹也是热泪盈眶。「将来孩儿你一定要练成神功，诛杀奸贼，为你父亲姐妹们报仇」。说着含泪从怀中取出一只锦盒。这是传说当年唐家先祖从西域学武带回『五限神拳』绝学记载成册，封于盒中，藏于宗门秘道。之前在秘道里逃跑时，儿子带走作为唐家最后的传承之物，但盒内究竟是何物，只有历任堡主知道。
+
+唐竹把盒盖缓缓转开，一本书册横放其内，封面写着『五拳限法』，左下角写着『孙中武手书』。这令二人欣喜若狂，顾不得犹身在险地，连忙翻阅，但觉内中字句浅显，修练不难，但要有大成，非得穷年累月之功。
+
+「好是功法，但要能有所成就，起码要二十年苦修，至于说要杀那奸贼，恐怕……恐怕……」你说着，把秘笈放回锦盒，忽然察觉盒底有异
+
+[[●「盒子下面好像有机关，是暗格！我们打开看看。」|3]]</tw-passagedata><tw-passagedata pid="7" name="2.2" tags="" position="550,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;set $pres1x to $s1x&gt;&gt;\
+&lt;&lt;set $pres1l to $s1l&gt;&gt;\
+&lt;&lt;set $pres1t to $s1t&gt;&gt;\
+&lt;&lt;set $pres2r to $s2r&gt;&gt;\
+&lt;&lt;set $pres2y to $s2y&gt;&gt;\
+&lt;&lt;set $pres2g to $s2g&gt;&gt;\
+\
+&lt;&lt;set $s1y to $s1y&gt;&gt;\
+&lt;&lt;set $s1x to $s1x&gt;&gt;\
+&lt;&lt;set $s1l to $s1l&gt;&gt;\
+&lt;&lt;set $s1t to $s1t&gt;&gt;\
+&lt;&lt;set $s2r to $s2r&gt;&gt;\
+&lt;&lt;set $s2y to $s2y&gt;&gt;\
+&lt;&lt;set $s2g to $s2g&gt;&gt;\
+\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1y&quot;&gt;&gt;$s1y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1x&quot;&gt;&gt;$s1x&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1l&quot;&gt;&gt;$s1l&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1t&quot;&gt;&gt;$s1t&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2r&quot;&gt;&gt;$s2r&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2y&quot;&gt;&gt;$s2y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2g&quot;&gt;&gt;$s2g&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+\
+&lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;
+&lt;span class=&quot;s150Text&quot;&gt;$name&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\
+&lt;span class=&quot;purpleText&quot;&gt;\
+淫欲 &lt;span id=&quot;s1y&quot;&gt;$pres1y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+羞耻 &lt;span id=&quot;s1x&quot;&gt;$pres1x&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+露出 &lt;span id=&quot;s1l&quot;&gt;$pres1l&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+痛责 &lt;span id=&quot;s1t&quot;&gt;$pres1t&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+&amp;nbsp;&lt;/span&gt;\
+&lt;span class=&quot;redText&quot;&gt;\
+乳房 &lt;span id=&quot;s2r&quot;&gt;$pres2r&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+阴部 &lt;span id=&quot;s2y&quot;&gt;$pres2y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+肛门 &lt;span id=&quot;s2g&quot;&gt;$pres2g&lt;/span&gt;\
+&lt;/span&gt;\
+&lt;/div&gt;\
+
+将马车驶至路边，男孩急跃入车厢，探视母亲。车厢内，你云鬓散乱，面色苍白，嘴角微有血丝。
+
+见到你神情惨淡，男孩心痛不已。「娘，对不起，都是孩儿没用，累您……」赶紧拿出药丹让你服下。「娘没事，吃了秘药再调息一下就没事了，你不必太过担心。」你安慰着儿子，忽然声音哽咽，「只是……你父亲，还有你的姐妹们……我……真是……」
+
+说到适才阵亡的父亲，男孩唐竹也是热泪盈眶。「将来孩儿你一定要练成神功，诛杀奸贼，为你父亲姐妹们报仇」。说着含泪从怀中取出一只锦盒。这是传说当年唐家先祖从西域学武带回『五限神拳』绝学记载成册，封于盒中，藏于宗门秘道。之前在秘道里逃跑时，儿子带走作为唐家最后的传承之物，但盒内究竟是何物，只有历任堡主知道。
+
+唐竹把盒盖缓缓转开，一本书册横放其内，封面写着『五拳限法』，左下角写着『孙中武手书』。这令二人欣喜若狂，顾不得犹身在险地，连忙翻阅，但觉内中字句浅显，修练不难，但要有大成，非得穷年累月之功。
+
+「好是功法，但要能有所成就，起码要二十年苦修，至于说要杀那奸贼，恐怕……恐怕……」你说着，把秘笈放回锦盒，忽然察觉盒底有异
+
+[[●「盒子下面好像有机关，是暗格！我们打开看看。」|3]]
+
+</tw-passagedata><tw-passagedata pid="8" name="3" tags="" position="675,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;set $pres1x to $s1x&gt;&gt;\
+&lt;&lt;set $pres1l to $s1l&gt;&gt;\
+&lt;&lt;set $pres1t to $s1t&gt;&gt;\
+&lt;&lt;set $pres2r to $s2r&gt;&gt;\
+&lt;&lt;set $pres2y to $s2y&gt;&gt;\
+&lt;&lt;set $pres2g to $s2g&gt;&gt;\
+\
+&lt;&lt;set $s1y to $s1y+1&gt;&gt;\
+&lt;&lt;set $s1x to $s1x&gt;&gt;\
+&lt;&lt;set $s1l to $s1l&gt;&gt;\
+&lt;&lt;set $s1t to $s1t&gt;&gt;\
+&lt;&lt;set $s2r to $s2r&gt;&gt;\
+&lt;&lt;set $s2y to $s2y&gt;&gt;\
+&lt;&lt;set $s2g to $s2g&gt;&gt;\
+\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1y&quot;&gt;&gt;$s1y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1x&quot;&gt;&gt;$s1x&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1l&quot;&gt;&gt;$s1l&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s1t&quot;&gt;&gt;$s1t&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2r&quot;&gt;&gt;$s2r&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2y&quot;&gt;&gt;$s2y&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;replace &quot;#s2g&quot;&gt;&gt;$s2g&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;\
+\
+&lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;
+&lt;span class=&quot;s150Text&quot;&gt;$name&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\
+&lt;span class=&quot;purpleText&quot;&gt;\
+淫欲 &lt;span id=&quot;s1y&quot;&gt;$pres1y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+羞耻 &lt;span id=&quot;s1x&quot;&gt;$pres1x&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+露出 &lt;span id=&quot;s1l&quot;&gt;$pres1l&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+痛责 &lt;span id=&quot;s1t&quot;&gt;$pres1t&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+&amp;nbsp;&lt;/span&gt;\
+&lt;span class=&quot;redText&quot;&gt;\
+乳房 &lt;span id=&quot;s2r&quot;&gt;$pres2r&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+阴部 &lt;span id=&quot;s2y&quot;&gt;$pres2y&lt;/span&gt;&amp;nbsp;&amp;nbsp;\
+肛门 &lt;span id=&quot;s2g&quot;&gt;$pres2g&lt;/span&gt;\
+&lt;/span&gt;\
+&lt;/div&gt;\
+
+暗格打开，竟摸出了一本小册子。外皮以篆体写着『血影神功』，字迹怪异扭曲，看来妖异无比。你瞥见册子名字，娇躯顿时一颤「这是西域欢喜教的灭绝一式。」
+
+「什么是灭绝一式？」唐竹想要再问，第一页的内容便映入眼帘「灭绝一式，为欢喜教血影神功之极招，可迫发力量至四十五重天，无敌不摧，但发功本人亦精枯血竭，用者慎之，慎之。」这段话，看得你们心儿狂跳，因为这就是你们迫切需要的报仇良方。四十五重天力量，可轻易击杀二叔唐慰亭，一雪家恨。
+
+唐竹继续往下读。「血影神功源自西域，循其阴阳调和之道，需得男女双修。功成之日，女方八成精元尽为男子所吸纳，并两人功力于一身。然功力融合，首重功法同源，故同修之侣，必得同门同功之脉。」
+
+这番话一看，让你们二人如遭五雷轰顶，心似擂鼓。秘笈中所要求的，不但要合体双修，还必须是功法同源。唐家堡遭遇剧变，现在除了仇人唐慰亭一派，就剩下母子二人。虽然唐竹并非你亲生，但十年来一直以母子向待，这样一来，岂不是要……乱伦吗？
+
+突然间刺激过大，唐竹连吸了几口气，斜眼瞥向母亲，想看看你对此有何决议。
+你胸膛起伏，呼吸急促
+
+	「妖法邪功，尽是污言秽语，练之无益，还是毁了吧！」
+	「妖法邪功，但为唐家先人之物，我们…….先留着……但不可再阅！」
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
