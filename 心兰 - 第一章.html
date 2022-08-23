@@ -99,7 +99,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="XL1" startnode="1" creator="Twine" creator-version="2.4.1" format="SugarCube" format-version="2.36.1" ifid="CB3B4B3B-8655-4705-9B23-F04BB64C8936" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
-  background-image: url("https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.png");
+  background-image: url("https://zmqio.github.io/m/心兰/1/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -140,7 +140,7 @@ a {
   	font-size: 110%;
 }
 
-/*
+
 #ui-bar {
   display: none;
 }
@@ -148,8 +148,6 @@ a {
 #story {
   margin-left: 3.5em;
 }
-*/
-
 
 
 .blueText {
@@ -200,7 +198,7 @@ document.addEventListener("copy", (evt) => {
 // (B2) PREVENT THE DEFAULT COPY ACTION
   evt.preventDefault();
 }, false);
-</script><tw-passagedata pid="1" name="Start" tags="NoBGImg" position="150,75" size="100,100">&lt;img src=&quot;https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.Title.png&quot; style=&quot;width:80%;&quot;&gt;
+</script><tw-passagedata pid="1" name="Start" tags="NoBGImg" position="150,75" size="100,100">&lt;img src=&quot;https://zmqio.github.io/m/心兰/1/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.Title.png&quot; style=&quot;width:80%; max-width: 640px;&quot;&gt;
 
 新用户: 输入你的名称（中英文字母无标点）
 老用户: 输入你狗链
@@ -211,12 +209,12 @@ document.addEventListener("copy", (evt) => {
 
 &lt;&lt;button [[我同意以下条款，进入|TS]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 
-&lt;span class=&quot;grayText&quot;&gt;&lt;span class=&quot;s50Text&quot;&gt;条款: 你同意你已满十八岁，并且使用这个软件和网站是你的自愿行为。此软件为娱乐和教育为目的，其中的指令，任务，要求，和信息皆非对用户的强迫或约束。你可以自由选择是否执行其中的任何指令，动作，拍摄，或传播要求。你同意此软件和网站的制作者不需负责由此软件或网站造成的对身体，精神，或金钱上的伤害或损失。一切的伤害，损失，和责任由你自己承担。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grayText&quot;&gt;&lt;span class=&quot;s50Text&quot;&gt;条款：你同意你已满十八岁，并且使用这个软件和网站是你的自愿行为。此软件为娱乐和教育为目的，其中的指令，任务，要求，和信息皆非对用户的强迫或约束。你可以自由选择是否执行其中的任何指令，动作，拍摄，或传播要求。你同意此软件和网站的制作者不需负责由此软件或网站造成的对身体，精神，或金钱上的伤害或损失。一切的伤害，损失，和责任由你自己承担。&lt;/span&gt;&lt;/span&gt;
 \
 &lt;&lt;nobr&gt;&gt;
-&lt;&lt;audio mainsong play&gt;&gt;
-&lt;&lt;audio mainsong loop&gt;&gt;
-&lt;&lt;audio mainsong volume 0.05&gt;&gt;
+&lt;&lt;audio Title play&gt;&gt;
+&lt;&lt;audio Title loop&gt;&gt;
+&lt;&lt;audio Title volume 1&gt;&gt;
 &lt;&lt;endnobr&gt;&gt;
 </tw-passagedata><tw-passagedata pid="2" name="gg" tags="" position="400,350" size="100,100">  &lt;div style=&quot;border-bottom:1px solid #CCC&quot;&gt;Hello, $player_name!&lt;/div&gt;
     
@@ -226,8 +224,23 @@ document.addEventListener("copy", (evt) => {
     
     &lt;img src=&quot;https://zmqio.github.io/m/a.jpg&quot;&gt;
     
-    &lt;&lt;audio TS play&gt;&gt;    </tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="25,75" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;https://zmqio.github.io/m/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.mp3&quot;&gt;&gt;
-        
+    &lt;&lt;audio TS play&gt;&gt;    </tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="25,75" size="100,100">&lt;&lt;cacheaudio &quot;Title&quot; &quot;https://zmqio.github.io/m/心兰/1/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.Title.mp3&quot;&gt;&gt;
+
+&lt;&lt;cacheaudio &quot;BG&quot; &quot;https://zmqio.github.io/m/心兰/1/%E5%BF%83%E5%85%B0%20-%20%E7%AC%AC%E4%B8%80%E7%AB%A0.BG.mp3&quot;&gt;&gt;
+
+
+&lt;&lt;cacheaudio &quot;blow1&quot; &quot;https://zmqio.github.io/all/moan/blow1.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;blow2&quot; &quot;https://zmqio.github.io/all/moan/blow2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mast1&quot; &quot;https://zmqio.github.io/all/moan/mast1.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mast2&quot; &quot;https://zmqio.github.io/all/moan/mast2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;moan1&quot; &quot;https://zmqio.github.io/all/moan/moan1.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;moan2&quot; &quot;https://zmqio.github.io/all/moan/moan2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;moan3&quot; &quot;https://zmqio.github.io/all/moan/moan3.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;moan4&quot; &quot;https://zmqio.github.io/all/moan/moan4.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;orga1&quot; &quot;https://zmqio.github.io/all/moan/orga1.mp3&quot;&gt;&gt;
+
+
+
 &lt;&lt;cacheaudio &quot;TS&quot; &quot;https://zmqio.github.io/m/a.wav&quot;&gt;&gt;
 </tw-passagedata><tw-passagedata pid="4" name="TS" tags="" position="300,75" size="100,100">&lt;&lt;if $pw neq &quot;1&quot;&gt;&gt;\
 		密码错误，[[重新输入|Start]].
@@ -305,7 +318,13 @@ document.addEventListener("copy", (evt) => {
 「娘，你好点了没有，娘……」男孩频频向车厢探问。隐隐间，你感觉腰间有鲜血渗出。在刚才的厮杀中，给敌人剑气击中，伤得不轻。你恍惚了好半晌，才回答：
 
 [[●「竹儿，娘没事，你……不用担心了，我们不可以耽搁，敌人要追上来了。」|2.1]]
-[[●「竹儿，娘受伤了，我们要停下来疗伤。」|2.2]]</tw-passagedata><tw-passagedata pid="6" name="2.1" tags="" position="550,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+[[●「竹儿，娘受伤了，我们要停下来疗伤。」|2.2]]
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio Title stop&gt;&gt;
+&lt;&lt;audio BG play&gt;&gt;
+&lt;&lt;audio BG loop&gt;&gt;
+&lt;&lt;audio BG volume 1&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="2.1" tags="" position="550,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1603,7 +1622,11 @@ document.addEventListener("copy", (evt) => {
 随着儿子的动作，你像火上的鱼儿一样弓起身子，曼妙肢体不自制地颤动，流出汗珠，沾满烈酒的阴户膣肉，给热烫阴茎摩擦得生疼。
 
 [[● 你奋力拖动着屁股，想要向外移动把儿子的阴茎退出来。|19.1]]
-[[● 强烈刺激感令你身体产生无法抵挡的欲求，你的屁股情不自己地向儿子阴茎逐渐靠拢。|19.2]]</tw-passagedata><tw-passagedata pid="31" name="19.1" tags="" position="2675,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+[[● 强烈刺激感令你身体产生无法抵挡的欲求，你的屁股情不自己地向儿子阴茎逐渐靠拢。|19.2]]
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan1 play&gt;&gt;
+&lt;&lt;audio moan1 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="19.1" tags="" position="2675,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1660,7 +1683,12 @@ document.addEventListener("copy", (evt) => {
 
 库藏了十八年的精液，全还回母亲孕育自己的子宫里，对个十八岁的男孩而言，一场毫无保留的性事，累得他气喘如牛，趴倒在你身上什么话也说不出。
 
-&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|20T]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="32" name="19.2" tags="" position="2675,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|20T]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan1 stop&gt;&gt;
+&lt;&lt;audio moan2 play&gt;&gt;
+&lt;&lt;audio moan2 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="19.2" tags="" position="2675,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1717,7 +1745,12 @@ document.addEventListener("copy", (evt) => {
 
 库藏了十八年的精液，全还回母亲孕育自己的子宫里，对个十八岁的男孩而言，一场毫无保留的性事，累得他气喘如牛，趴倒在你身上什么话也说不出。
 
-&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|20T]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="33" name="20T" tags="" position="2800,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|20T]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan1 stop&gt;&gt;
+&lt;&lt;audio moan2 play&gt;&gt;
+&lt;&lt;audio moan2 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="20T" tags="" position="2800,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1777,7 +1810,10 @@ document.addEventListener("copy", (evt) => {
 全程录影，并发送于本主。
 &lt;/span&gt;\
 
-&lt;span class=&quot;goldLink&quot;&gt;[[● 母狗快要高潮了！视频已发送给您。|21]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="34" name="21" tags="" position="2925,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;goldLink&quot;&gt;[[● 母狗快要高潮了！视频已发送给您。|21]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan2 stop&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="21" tags="" position="2925,75" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1831,7 +1867,11 @@ document.addEventListener("copy", (evt) => {
 你微微笑着，手里握着儿子的肉茎，
 
 [[● 羞红着脸把阴茎放在嘴里，用舌头在龟头细缝上轻轻一舔，然后开始深含吮吸。|22.1]]
-[[● 羞红着脸大胆地跨坐在他身上，让阴茎轻轻挑在阴唇上面，开始晃动身体。|22.2]]</tw-passagedata><tw-passagedata pid="35" name="22.1" tags="" position="3050,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+[[● 羞红着脸大胆地跨坐在他身上，让阴茎轻轻挑在阴唇上面，开始晃动身体。|22.2]]
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan3 play&gt;&gt;
+&lt;&lt;audio moan3 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="22.1" tags="" position="3050,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1891,7 +1931,11 @@ document.addEventListener("copy", (evt) => {
 [[● 把唐竹的阴茎插入你的阴道。|23.1]]
 [[● 把唐竹的阴茎插入你的肛门。|23.2]]
 [[● 把唐竹的阴茎夹于两乳之间进行乳交。|23.3]]
-</tw-passagedata><tw-passagedata pid="36" name="22.2" tags="" position="3050,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan3 stop&gt;&gt;
+&lt;&lt;audio moan4 play&gt;&gt;
+&lt;&lt;audio moan4 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="22.2" tags="" position="3050,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -1948,7 +1992,12 @@ document.addEventListener("copy", (evt) => {
 
 [[● 把唐竹的阴茎插入你的阴道。|23.1]]
 [[● 把唐竹的阴茎插入你的肛门。|23.2]]
-[[● 把唐竹的阴茎夹于两乳之间进行乳交。|23.3]]</tw-passagedata><tw-passagedata pid="37" name="23.1" tags="" position="3200,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+[[● 把唐竹的阴茎夹于两乳之间进行乳交。|23.3]]
+&lt;nobr&gt;&gt;
+&lt;&lt;audio moan3 stop&gt;&gt;
+&lt;&lt;audio moan4 play&gt;&gt;
+&lt;&lt;audio moan4 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="23.1" tags="" position="3200,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2006,7 +2055,12 @@ document.addEventListener("copy", (evt) => {
 
 「何必问。娘，难道你现在不在里面吗？」
 
-&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|24T.1]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="38" name="23.2" tags="" position="3200,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|24T.1]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan4 stop&gt;&gt;
+&lt;&lt;audio blow1 play&gt;&gt;
+&lt;&lt;audio blow1 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="23.2" tags="" position="3200,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2064,7 +2118,12 @@ document.addEventListener("copy", (evt) => {
 
 「何必问。娘，难道你现在不在里面吗？」
 
-&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|24T.2]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="39" name="23.3" tags="" position="3200,275" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|24T.2]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan4 stop&gt;&gt;
+&lt;&lt;audio blow1 play&gt;&gt;
+&lt;&lt;audio blow1 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="23.3" tags="" position="3200,275" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2123,7 +2182,11 @@ document.addEventListener("copy", (evt) => {
 「何必问。娘，难道你现在不在里面吗？」
 
 &lt;span class=&quot;gold110Link&quot;&gt;[[● 任务|24T.3]]&lt;/span&gt;
-</tw-passagedata><tw-passagedata pid="40" name="24T.1" tags="" position="3325,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio moan4 stop&gt;&gt;
+&lt;&lt;audio blow1 play&gt;&gt;
+&lt;&lt;audio blow1 volume 0.5&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="24T.1" tags="" position="3325,25" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2179,7 +2242,10 @@ document.addEventListener("copy", (evt) => {
 高潮后把视频发于本主
 &lt;/span&gt;\
 
-&lt;span class=&quot;goldLink&quot;&gt;[[● 贱母狗已经高潮了，请在视频看母狗张开的贱逼和屁眼。|25]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="41" name="24T.2" tags="" position="3325,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;goldLink&quot;&gt;[[● 贱母狗已经高潮了，请在视频看母狗张开的贱逼和屁眼。|25]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio blow1 stop&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="24T.2" tags="" position="3325,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2236,8 +2302,10 @@ document.addEventListener("copy", (evt) => {
 高潮后把视频发于本主
 &lt;/span&gt;\
 
-&lt;span class=&quot;goldLink&quot;&gt;
-[[● 贱母狗已经高潮了，请在视频看母狗张开的贱逼和屁眼。|25]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="42" name="24T.3" tags="" position="3325,275" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;goldLink&quot;&gt;[[● 贱母狗已经高潮了，请在视频看母狗张开的贱逼和屁眼。|25]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio blow1 stop&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="24T.3" tags="" position="3325,275" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2294,8 +2362,10 @@ document.addEventListener("copy", (evt) => {
 把视频发于本主
 &lt;/span&gt;\
 
-&lt;span class=&quot;goldLink&quot;&gt;
-[[● 贱母狗已经高潮了，请在视频看母狗的贱乳和贱逼。|25]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="43" name="25" tags="" position="3450,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
+&lt;span class=&quot;goldLink&quot;&gt;[[● 贱母狗已经高潮了，请在视频看母狗的贱乳和贱逼。|25]]&lt;/span&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio blow1 stop&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="25" tags="" position="3450,150" size="100,100">&lt;&lt;set $pres1y to $s1y&gt;&gt;\
 &lt;&lt;set $pres1x to $s1x&gt;&gt;\
 &lt;&lt;set $pres1l to $s1l&gt;&gt;\
 &lt;&lt;set $pres1t to $s1t&gt;&gt;\
@@ -2350,7 +2420,10 @@ document.addEventListener("copy", (evt) => {
 &lt;b&gt;$name-$s1y-$s1x-$s1l-$s1t-$s2r-$s2y-$s2g&lt;/b&gt;
 
 把它连同前面任务的图片视频发于本主检查，本主认为合格后会给你打开下一章和其他剧情的权限。
-在下一章或者另外一个剧情开始系统会提示让你把狗链粘帖进去，继续调教进度。&lt;/span&gt;\
+在下一章或者另外一个剧情开始系统会提示让你把狗链粘帖进去，继续调教进度。
+
+推特@zmqio
+&lt;/span&gt;\
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
